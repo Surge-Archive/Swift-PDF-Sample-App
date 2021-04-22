@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		5935077426309B91004C50FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5935077226309B91004C50FC /* Main.storyboard */; };
 		5935077626309B93004C50FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5935077526309B93004C50FC /* Assets.xcassets */; };
 		5935077926309B93004C50FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5935077726309B93004C50FC /* LaunchScreen.storyboard */; };
+		5935078326309BAC004C50FC /* PDF-Generator in Frameworks */ = {isa = PBXBuildFile; productRef = 5935078226309BAC004C50FC /* PDF-Generator */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5935078326309BAC004C50FC /* PDF-Generator in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = "PDF Tester";
+			packageProductDependencies = (
+				5935078226309BAC004C50FC /* PDF-Generator */,
+			);
 			productName = "PDF Tester";
 			productReference = 5935076926309B91004C50FC /* PDF Tester.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +115,9 @@
 				Base,
 			);
 			mainGroup = 5935076026309B91004C50FC;
+			packageReferences = (
+				5935078126309BAC004C50FC /* XCRemoteSwiftPackageReference "PDF-Generator" */,
+			);
 			productRefGroup = 5935076A26309B91004C50FC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5935078126309BAC004C50FC /* XCRemoteSwiftPackageReference "PDF-Generator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/wearesurge/PDF-Generator";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5935078226309BAC004C50FC /* PDF-Generator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5935078126309BAC004C50FC /* XCRemoteSwiftPackageReference "PDF-Generator" */;
+			productName = "PDF-Generator";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5935076126309B91004C50FC /* Project object */;
 }

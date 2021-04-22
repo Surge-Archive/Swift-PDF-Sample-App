@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "PDF-Generator",
+        "repositoryURL": "https://github.com/wearesurge/PDF-Generator",
+        "state": {
+          "branch": "main",
+          "revision": "5e16846da75f558660140490480600b3c881e324",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
